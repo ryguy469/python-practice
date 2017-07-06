@@ -23,3 +23,6 @@ products = [
 ]
 
 print(products)
+
+
+# code.interact(local=locals())
