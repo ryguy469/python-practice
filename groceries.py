@@ -27,10 +27,13 @@ print('THERE ARE' + ' ' + repr(len(products)) + ' ' + 'PRODUCTS')
 def sort_by_team_name(product):
     return product["name"]
 
+def sort_by_cost(product):
+    return product["price"]
+
 products = sorted(products, key=sort_by_team_name)
 
 for product in products:
-    print(product["name"])
+    print(product["name"],product["price"])
 
 
-# code.interact(local=locals())
+#code.interact(local=locals())
