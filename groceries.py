@@ -22,7 +22,15 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ]
 
-print(products)
+print('THERE ARE' + ' ' + repr(len(products)) + ' ' + 'PRODUCTS')
+
+def sort_by_team_name(product):
+    return product["name"]
+
+products = sorted(products, key=sort_by_team_name)
+
+for product in products:
+    print(product["name"])
 
 
 # code.interact(local=locals())
