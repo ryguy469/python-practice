@@ -1,4 +1,5 @@
 import code
+
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -26,13 +27,13 @@ print("----------------")
 
 print('THERE ARE' + ' ' + str (len(products)) + ' ' + 'PRODUCTS:')
 
-def sort_by_team_name(product):
+def sort_by_product_name(product):
     return product["name"]
 
 def sort_by_cost(product):
     return product["price"]
 
-products = sorted(products, key=sort_by_team_name)
+products = sorted(products, key=sort_by_product_name)
 
 for product in products:
     print(" + " + product["name"],product["price"])
