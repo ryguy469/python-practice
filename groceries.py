@@ -43,12 +43,19 @@ print("-----------------")
 
 print('THERE ARE 10 DEPARTMENTS:')
 
-def sort_by_department(product):
-    return product["department"]
-
-products = sorted(products, key=sort_by_department)
+departments = []
 
 for product in products:
-    print(" + " + product["department"])
+    departments.append(product["department"])
+
+departments = set(departments)
+departments = list(departments)
+
+department = sorted(departments)
+
+for department in departments:
+    print(" + ", department)
+
+#print(departments)
 
 # code.interact(local=locals())
