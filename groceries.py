@@ -24,7 +24,7 @@ products = [
 
 print("----------------")
 
-print('THERE ARE' + ' ' + repr(len(products)) + ' ' + 'PRODUCTS')
+print('THERE ARE' + ' ' + str (len(products)) + ' ' + 'PRODUCTS:')
 
 def sort_by_team_name(product):
     return product["name"]
@@ -39,7 +39,7 @@ for product in products:
 
 print("-----------------")
 
-print('THERE ARE 10 DEPARTMENTS')
+print('THERE ARE 10 DEPARTMENTS:')
 
 def sort_by_department(product):
     return product["department"]
