@@ -35,7 +35,7 @@ def sort_by_cost(product):
 products = sorted(products, key=sort_by_team_name)
 
 for product in products:
-    print(product["name"],product["price"])
+    print(" + " + product["name"],product["price"])
 
 print("-----------------")
 
@@ -46,7 +46,7 @@ def sort_by_department(product):
 
 products2 = sorted(products, key=sort_by_department)
 
-for products in products:
-    print(product["department"])
+for product in products:
+    print(" + " + product["department"])
 
 # code.interact(local=locals())
