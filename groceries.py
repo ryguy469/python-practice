@@ -58,7 +58,7 @@ def get_products(department_name):
 
 for department in departments:
     matching_products = get_products(department)
-    print(" + ", department, "(", len(matching_products), "products)")
+    print(" + " + department + " " + "(" + str(len(matching_products)) + " " + "products)")
 
 
 
