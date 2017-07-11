@@ -51,11 +51,11 @@ for product in products:
 departments = set(departments)
 departments = list(departments)
 
-department = sorted(departments)
+departments = sorted(departments)
 
 for department in departments:
     print(" + ", department)
 
-#print(departments)
+
 
 # code.interact(local=locals())
