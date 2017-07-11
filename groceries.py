@@ -53,8 +53,12 @@ departments = list(departments)
 
 departments = sorted(departments)
 
+def get_products(department_name):
+    return [product for product in products if product["department"] == department_name]
+
 for department in departments:
-    print(" + ", department)
+    matching_products = get_products(department)
+    print(" + ", department, "(", len(matching_products), "products)")
 
 
 
