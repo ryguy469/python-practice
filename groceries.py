@@ -36,7 +36,8 @@ def sort_by_cost(product):
 products = sorted(products, key=sort_by_product_name)
 
 for product in products:
-    print(" + " + product["name"],product["price"])
+    price_usd = '(${0:.2f})'.format(product["price"])
+    print(" + " + product["name"],price_usd)
 
 print("-----------------")
 
@@ -45,7 +46,7 @@ print('THERE ARE 10 DEPARTMENTS:')
 def sort_by_department(product):
     return product["department"]
 
-products2 = sorted(products, key=sort_by_department)
+products = sorted(products, key=sort_by_department)
 
 for product in products:
     print(" + " + product["department"])
