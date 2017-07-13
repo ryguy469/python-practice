@@ -21,7 +21,12 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # Products based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
-product_id = input("Please input a valid product identifier:")
 
-print("The product identifier is:" + str(product_id))
+while True:
+    product_id = input("Please input a valid product identifier:")
+    if product_id == "DONE":
+        print("Check yo receipt dawg")
+        break
+    else:
+        print("The product identifier is:" + str(product_id))
 #print("THIS IS MY SHOPPING CART PROJECT")
